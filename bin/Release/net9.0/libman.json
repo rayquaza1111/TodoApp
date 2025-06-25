@@ -9,6 +9,11 @@
     {
       "library": "jquery@3.7.1",
       "destination": "wwwroot/lib/jquery/dist"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@7.0.5",
+      "destination": "wwwroot/lib/signalr/dist"
     }
   ]
 } 

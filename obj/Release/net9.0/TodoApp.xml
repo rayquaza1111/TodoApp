@@ -9,7 +9,7 @@
             Controller for managing Todo items
             </summary>
         </member>
-        <member name="M:TodoApp.Controllers.TodoController.#ctor(TodoApp.Data.ApplicationDbContext,Microsoft.Extensions.Logging.ILogger{TodoApp.Controllers.TodoController})">
+        <member name="M:TodoApp.Controllers.TodoController.#ctor(TodoApp.Data.ApplicationDbContext,Microsoft.Extensions.Logging.ILogger{TodoApp.Controllers.TodoController},Microsoft.AspNetCore.SignalR.IHubContext{TodoApp.TodoHub})">
             <summary>
             Initializes a new instance of the TodoController
             </summary>
@@ -70,6 +70,11 @@
         </member>
         <member name="M:TodoApp.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
+        </member>
+        <member name="T:TodoApp.TodoHub">
+            <summary>
+            SignalR hub for broadcasting Todo notifications to connected clients.
+            </summary>
         </member>
     </members>
 </doc>
