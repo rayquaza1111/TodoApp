@@ -72,6 +72,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add SignalR service for real-time notifications
 builder.Services.AddSignalR();
 
+builder.Logging.AddAzureWebAppDiagnostics();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
