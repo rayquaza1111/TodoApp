@@ -374,4 +374,3 @@ C:\TodoApp\obj\Release\net9.0\compressed\hx4gkk5q01-8qch1jo64k.gz
 C:\TodoApp\obj\Release\net9.0\compressed\q738ftmpra-mnskgnoj1q.gz
 C:\TodoApp\obj\Release\net9.0\compressed\8fj2hnjykv-tifl2ret90.gz
 C:\TodoApp\obj\Release\net9.0\compressed\brtc9qtne7-8j09q55oxz.gz
-C:\TodoApp\obj\Release\net9.0\staticwebassets.upToDateCheck.txt
