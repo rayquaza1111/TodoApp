@@ -1,3 +1,4 @@
+// Test CI/CD: This is a test comment to trigger the pipeline
 //dotnet publish --configuration Release --output ".\publish_fdd"
 //dotnet publish --configuration Release --runtime win-x64 --output ".\publish_scd"
 
