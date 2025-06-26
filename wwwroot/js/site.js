@@ -12,7 +12,7 @@ const connection = new signalR.HubConnectionBuilder()
 // Receive notification when a todo is created
 connection.on("TodoCreated", function (todo) {
     console.log("SignalR: TodoCreated notification received", todo);
-    alert("A new todo was created: " + todo.title);
+    alert("A new todo was created (RAYMOND TESTING): " + todo.title);
     // Optionally, reload the todo list or add the new todo to the UI
     loadTodos();
 });

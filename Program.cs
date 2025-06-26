@@ -72,6 +72,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add SignalR service for real-time notifications
 builder.Services.AddSignalR();
 
+// Enable Azure App Service diagnostics (Stream log)
 builder.Logging.AddAzureWebAppDiagnostics();
 
 var app = builder.Build();
