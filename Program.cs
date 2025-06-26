@@ -24,9 +24,16 @@ builder.Services.AddLogging(logging =>
 // Add HttpLogging
 builder.Services.AddHttpLogging(logging =>
 {
-    logging.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.All;
-    logging.RequestHeaders.Add("Authorization");
-    logging.ResponseHeaders.Add("X-Response-Time");
+    logging.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestPath |
+                              Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestMethod |
+                              Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseStatusCode |
+                              Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestHeaders |
+                              Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponseHeaders;
+    logging.RequestHeaders.Clear();
+    logging.RequestHeaders.Add("Content-Type");
+    logging.RequestHeaders.Add("User-Agent");
+    logging.ResponseHeaders.Clear();
+    logging.ResponseHeaders.Add("Content-Type");
 });
 
 // Add Swagger/OpenAPI
